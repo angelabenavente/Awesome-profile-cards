@@ -1,0 +1,32 @@
+@charset 'utf-8';
+ 
+// Configuration and helpers
+@import 'core/mixins';
+@import 'core/variables';
+@import 'core/links';
+ 
+// vendors @import 'vendor/bootstrap/reboot';
+
+ 
+// Base stuff
+@import 'base/normalize';
+ 
+// Components
+@import 'components/hero';
+@import 'components/claim';
+@import 'components/firstSection';
+@import 'components/secondSection';
+@import 'components/thirdSection';
+@import 'components/contactIntro';
+@import 'components/forms';
+@import 'components/square';
+
+ 
+// layout//
+
+@import 'layout/header'; 
+@import 'layout/footer';
+ 
+// pages
+@import 'pages/about-us';
+@import 'pages/contact';

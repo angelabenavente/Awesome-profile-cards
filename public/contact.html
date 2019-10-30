@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Document</title>
+        <link href="./assets/css/normalize.css" rel="stylesheet"
+        type="text/css">
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap"
+        rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600&display=swap"
+        rel="stylesheet">
+        <script src="http://kit.fontawesome.com/672e03816c.js" crossorigin="anonymous"></script>
+    </head>
+    
+    <body class="wrapper">
+        <section class="hero"></section>
+        <header class="header-content">
+            <div class="tittle-header">
+                 <h1>Front-Walkers</h1>
+
+            </div>
+            <nav class="first-navigation">
+                <ul>
+                    <li><a href="#equipo">Equipo</a>
+
+                    </li>
+                    <li><a href="#quienes-somos">Quienes somos</a>
+
+                    </li>
+                    <li><a href="./contact.html" target="blank" title="contacto">Contacto</a>
+
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main-contact">
+            <div class="main__contact">
+                 <h1 class="main__contact title">CONTACTO</h1>
+
+                <div class="main__contact text">
+                    <p class="main__contact text p">Si tienes cualquier consulta, por favor no dudes en mandarnos un mensaje.
+                        Te responderemos lo antes posible.</p>
+                    <p class="main__contact text small">Todos los campos marcados con <span>*</span> son obligatorios</p>
+                </div>
+            </div>
+            <div class="contact-form">
+                <form class="form" action="*" method="POST">
+                    <label class="form label" for="name">Nombre completo<span class="form imput simbol">*</span>
+
+                    </label>
+                    <input class="form imput" id="name" placeholder="Nombre..." type="text"
+                    name="name" required>
+                    <label class="form label" for="email">E-mail<span class="form imput-simbol">*</span>
+
+                    </label>
+                    <input class="form imput" id="email" placeholder="nombre.apellidos@mail.com"
+                    type="email" name="E-mail" required>
+                    <label class="form label" for="phone">Teléfono</label>
+                    <input class="form imput" id="phone" placeholder="Ej: 123456789"
+                    type="phone" name="Teléfono">
+                    <input type="hidden" id="productid" name="productid" value="xm234jq" />
+                    <label class="form label" for="message">Mensaje<span class="form imput-simbol">*</span>
+
+                    </label>
+                    <textarea class="form imput message" id="message" placeholder="¿Qué necesitas?"
+                    rows="10" cols="5" name="Mensaje" required></textarea>
+                    <input class="form imput submit" type="submit" value="ENVIAR">
+                </form>
+            </div>
+        </main>
+        <footer class="footer-content"> <small class="copyright">Front-Walkers &copy; 2019</small>
+
+            <nav class="footer-navigation">
+                <ul>
+                    <li><a href="#equipo">Equipo</a>
+
+                    </li>
+                    <li><a href="#quienes-somos">Quienes somos</a>
+
+                    </li>
+                    <li><a href="./contact.html" target="blank" title="contacto">Contacto</a>
+
+                    </li>
+                </ul>
+            </nav> <a class="container_logo" href="https://adalab.es/" target="_blank">
+        <img class="logo" src="./assets/images/logo-adalab-80px.png" alt="logo_adalab">
+    </a>
+
+        </footer>
+    </body>
+
+</html>

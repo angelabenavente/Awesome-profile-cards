@@ -1,0 +1,13 @@
+.hero {
+    width: 100%;
+    height: 421px;
+    background: url(../images/hero-image-mobile.jpg) center bottom no-repeat;
+    background-size: cover;
+    z-index: -2;
+    @include tablet {
+        height: 421px;
+        background: url(../images/hero-image-tablet-web.jpg) center bottom no-repeat;
+        background-size: cover;}
+    @include desktop {
+        height: 550px;}
+} 

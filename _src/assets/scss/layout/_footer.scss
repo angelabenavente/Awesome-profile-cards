@@ -1,0 +1,98 @@
+
+.footer-content {
+    width: 100%;
+    background-color: white;
+    border-top: 1px solid #b8b8b9;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 60px 90px 90px;
+    @include tablet {
+        width: 100%;
+        position: relative;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;}
+    .copyright {
+        height: 20px;
+        padding-top: 30px;
+        padding-bottom: 20px;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        line-height: 1.43;
+        color:#b8b8b9;
+        text-align: center;
+        display: inline-block;
+        grid-column:1/5;
+        @include tablet {
+            width: 20%;
+            padding-top: 30px;
+            margin-left: 45px;
+            order: 1;}
+        @include desktop {
+            width: 20%;
+            margin-left: 138px;
+            padding-top: 30px;
+            order: 1;
+            text-align: start;}
+    }
+    .footer-navigation {
+        padding-bottom: 30px;
+        margin: auto;
+        opacity: 0.75;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 1.43;
+        color: #54585a;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        grid-column: 1/5;
+        @include tablet {
+            width: 20%;
+            padding-top: 30px;
+            margin-right: 45px;
+            line-height: 2.14;
+            text-align: end;
+            order: 2;}
+        @include desktop {
+            width: 50%;
+            margin-right: 138px;
+            padding-top: 30px;
+            line-height: 2.14;
+            order: 2;
+            text-align: end;}
+        a { 
+            display: block;
+            text-transform: uppercase;
+            color: #54585a;
+            opacity: 0.75;
+            grid-column: 1/6;                
+                &:hover {
+                    color:#14d9c4;
+                    opacity: 0.75;}
+            
+            li {
+                display: block;}
+        }
+    }
+    .container-logo {
+        grid-column: 1/5;
+    }
+    .logo {
+        width: 115.9px;
+        margin: auto;
+        height: 45px;
+        padding-bottom: 45px;
+        @include tablet {
+            padding-bottom: 60px;
+            margin-left: 45px;
+            position: absolute;
+            top: 65px;
+            text-align: start;}
+        @include desktop {
+            padding-bottom: 51px;
+            margin-left: 138px;}
+    }
+ }

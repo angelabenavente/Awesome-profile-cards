@@ -1,0 +1,155 @@
+.persons {
+    width: 100%;
+    margin-top: 30px;
+    padding-bottom: 5px;
+    @include tablet {
+        width: 89%;
+        padding-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;}
+    @include desktop {
+        width: 79%;
+        margin-left: auto;
+        margin-right: auto;}
+    h2{
+        margin-bottom: 0%;
+        font-family: 'Rubik', sans-serif;
+        font-size: 24px;
+        line-height: 45px;
+        font-weight: 500;
+        text-transform: uppercase;
+        color: #099d8d;
+        text-align: center;
+        @include tablet {
+            margin-top: 45px;
+            margin-bottom: 36px;}
+    }
+    
+    .presentation {
+        width: 90.6%;
+        margin-left: auto;
+        margin-right: auto;
+        @include tablet {
+            width: 100%;
+            margin-bottom: 55px;
+            display: flex;
+            align-self: baseline;}
+        
+        &.left {
+            @include tablet {
+                display: flex;
+                flex-direction: row;}
+            @include desktop {
+                padding-right: 138px;}
+            
+            .name {
+                @include tablet {
+                    text-align: left;
+                    margin-left: 26px;}
+            }
+            .description {
+                @include tablet {
+                    margin-left: 26px;
+                    text-align: left;}
+                @include desktop {
+                    margin-right: 162px;}
+            }
+        
+        }
+        &.right {
+            @include tablet {
+                display: flex;
+                flex-direction: row-reverse;}
+            @include desktop {
+                padding-right: 138px;}
+            .name {
+                @include tablet {
+                    margin-right: 26px;
+                    text-align: right;}
+            }
+            .description {
+                @include tablet {
+                    margin-right: 26px;
+                    text-align: right;}
+                
+                @include desktop {
+                    margin-left: 162px;}
+            }
+        }
+        .name{
+            margin-top: 10px;
+            margin-bottom: 0%;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 20px;
+            font-weight: 500;
+            line-height: 2.25;
+            color: #000000;
+            text-align: center;
+        
+            @include tablet {
+                margin-top: 0;}
+        }
+        .description {
+            padding-bottom: 15px;
+            margin-top: 0;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            font-weight: normal;
+            line-height: 1.5;
+            color: #54585a;
+            text-align: center;
+            @include tablet {
+                margin-bottom: 0;}
+        }
+        .photo {
+            height: 170px;
+            width: 170px;
+            margin-top: 40px;
+            margin-left: auto;
+            margin-right: auto;
+            border: 5px solid rgba(0, 0, 0, 0.08);
+            border-radius: 10px;
+            text-align: center;
+            display: block;
+            &.first-photo {
+                margin-top: 25px;
+                @include tablet {
+                    margin-top: 0;}
+            }
+            @include tablet {
+                width: 195px;
+                height: 195px;
+                margin-top: 0;}
+            @include desktop {
+                    width: 268px;
+                    height: 268px;}      
+        }
+        .social {
+            width: 124px;
+            height: 30px;
+            margin-left: auto;
+            margin-right: auto;
+            color: #54585a;
+            display: flex;
+            justify-content: space-between;
+            &.no-reverse {
+                @include tablet {
+                margin-left: 26px;}
+            }
+            &.reverse {
+                @include tablet {
+                margin-right: 26px;}
+            }
+            .fab {
+                width: 16px;
+                height: 16px;
+                color: #099d8d;}
+            .fas {
+                color: #099d8d;}
+            .point {
+                font-family: 'Open Sans', sans-serif;
+                font-size: 16px;
+                color: #54585a;}
+          }
+        }
+      }

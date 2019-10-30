@@ -1,0 +1,63 @@
+.about-us {
+    width: 90.6%;
+    margin: auto;
+    background-color: white;
+    justify-content: center;
+    z-index: 0;
+    @include tablet {
+        margin-bottom: 30px;
+        margin-top: 45px;}
+    @include desktop {
+        width: 100%;
+        margin-top: 45px;}
+    .title {
+        padding-top: 30px;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: 0;
+        margin-bottom: 15px;
+        font-family: 'Rubik', sans-serif;
+        font-size: 24px;
+        font-weight: 500;
+        line-height: 45px;
+        color: #14d9c4;
+        text-align: center;
+        display: block;
+        @include tablet {
+            padding-top: 0;
+            margin-top:0;
+            margin-bottom:0;
+            color: #099d8d;}
+        @include desktop {
+            margin-top:0;
+            margin-bottom:0;
+            font-family: 'Rubik', sans-serif;
+            font-size: 24px;
+            color: #099d8d;
+            font-weight: 500;
+            line-height: 45px;}
+    
+    }
+    .team {
+        width: 100%;
+        @include tablet {
+            opacity: 0.67;}
+        @include desktop {
+            max-width: 50%;
+            margin: 0 auto;
+            display:inline-block;
+            display:flex;
+            flex-direction: column;}
+        
+        p {
+            padding-top: 0;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            line-height: 24px;
+            color: #54585a;
+            text-align: center;
+            &:last-child {
+                margin-bottom: 2px;}
+        }
+    }
+}  

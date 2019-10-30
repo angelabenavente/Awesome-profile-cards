@@ -1,0 +1,91 @@
+.header-content {
+    width: 100%;
+    position: fixed;
+    top: -15px;
+    justify-content: center;
+    z-index: 2;
+    @include tablet {
+            display: flex;
+            justify-content: flex-start;}
+    .tittle-header {
+        height: 30px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+        background-color:#099d8d;
+        opacity: 0.95;
+        text-align: center;
+        @include tablet {
+            width: 50vw;
+            padding-left: 45px;
+            margin:0;
+            text-align: left;}
+        @include desktop {
+            padding-left: 142px;}
+        h1 {
+            height: 30px;
+            margin-top: 8px;
+            margin-bottom: 0;
+            margin-left: auto;
+            margin-right: auto;
+            font-family: 'Rubik', sans-serif;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 1.88;
+            text-transform: uppercase;
+            color: #ffffff;
+        
+            @include tablet {
+                padding-top: 9px;
+                margin-top: 0;}
+        }
+    }
+    .first-navigation {
+        height: 45px;
+        background-color: #14d9c4;
+        opacity: 0.95;
+        text-align: center;
+        display: flex;
+        justify-content: space-evenly;
+        @include tablet {
+            width: 50vw;
+            height: 30px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            padding-right:45px;
+            margin-top:0;
+            background-color:#099d8d;
+            opacity: 0.95;
+            text-align: right;
+            justify-content: flex-end;}
+        
+        @include desktop {
+            padding-right:138px;}
+        ul {
+            width: 100%;
+            display: flex;
+            justify-content: space-evenly;
+            @include tablet {
+                max-width: 338px;}
+            }
+        a {
+            height: 30px;
+            padding-top: 8px;
+            padding-bottom: 7px;
+            font-family: 'Rubik', sans-serif;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 2;
+            text-transform: uppercase;
+            color: #ffffff;
+            text-decoration:none;
+            display: inline-block;
+            vertical-align: center;
+        
+            @include tablet {
+                margin-left:18px;
+                display: inline-block;}
+        }
+    }
+  }

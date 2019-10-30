@@ -1,0 +1,51 @@
+.claim {
+  width: 90.6%;
+  max-width: 441px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  position: relative;
+  top: -40px;
+  @include tablet {
+      width: 441px;
+      margin-left: 45px;
+      margin-right: 0;
+      opacity: 0.8;
+      top: -80px;}
+  @include desktop {
+      width: 574px;
+      margin-left: 142px;}
+  .hero-title {
+      width: 260px;
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 14px;
+      padding-bottom: 16px;
+      margin: 0;
+      position: relative;
+      top: -40px;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 1.39;
+      color: #000000;
+      display: inline-block;
+      background-color: white;
+      transform: translateY(50%);
+      flex-grow: 1;
+      @include tablet {
+          width: 100%;
+          padding-left: 30px;
+          padding-right: 30px;
+          top: 0;
+          background-color: rgba(255,255,255,0.8);
+          display: inline-block;
+          transform: translateY(0);}
+      @include desktop {
+          height: 60px;
+          font-size: 24px;
+          line-height: 1.25;}
+  }
+}
