@@ -659,6 +659,15 @@ li {
   vertical-align: center;
 }
 
+.header-content .first-navigation a:hover {
+  -webkit-animation-name: moveInBottom;
+  animation-name: moveInBottom;
+  -webkit-animation-delay: ease-out 0.75s;
+  animation-delay: ease-out 0.75s;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+}
+
 .footer-content {
   width: 100%;
   background-color: white;
@@ -1171,6 +1180,26 @@ li {
   .footer-content .logo {
     padding-bottom: 51px;
     margin-left: 138px;
+  }
+}
+
+@-webkit-keyframes moveInBottom {
+  0% {
+    text-shadow: 0 0 black;
+  }
+
+  100% {
+    text-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@keyframes moveInBottom {
+  0% {
+    text-shadow: 0 0 black;
+  }
+
+  100% {
+    text-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
   }
 }
 
