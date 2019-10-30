@@ -519,6 +519,61 @@ li {
   height: 22px;
 }
 
+.contact-form {
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 58px;
+  margin-bottom: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.form {
+  width: 100%;
+  max-width: 601px;
+  margin: 0 auto;
+  font-family: 'OpenSans', Arial, sans-serif;
+  font-size: 14px;
+  color: #54585a;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.form .imput-simbol {
+  font-size: 14px;
+  color: #14d9c4;
+  padding: 3px;
+}
+
+.form .form.imput {
+  max-width: 601px;
+  height: 45px;
+  border: 1px solid #b8b8b9;
+  color: #b8b8b9;
+  padding-left: 15px;
+  padding-top: 11px;
+  padding-bottom: 15px;
+  margin-top: 7px;
+  margin-bottom: 13px;
+}
+
+.form .form.imput.message {
+  height: 105px;
+}
+
+.form .form.imput.submit {
+  background-color: #099d8d;
+  color: #ffffff;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #099d8d;
+}
+
 .square {
   height: 30px;
   width: 30px;
@@ -857,6 +912,10 @@ li {
     margin-right: 26px;
   }
 
+  .form .form.imput.submit {
+    width: 206px;
+  }
+
   .header-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1054,6 +1113,30 @@ li {
   .persons .presentation .photo {
     width: 268px;
     height: 268px;
+  }
+
+  .form .form.imput.submit {
+    width: 278px;
+  }
+
+  .par {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+  }
+
+  .par .form.imput {
+    width: 395px;
+    margin-right: 44px;
+  }
+
+  .par .form.imput.tel {
+    width: 162px;
+    margin-right: 0;
   }
 
   .header-content .tittle-header {
