@@ -594,6 +594,10 @@ li {
   -ms-flex-pack: center;
   justify-content: center;
   z-index: 2;
+  -webkit-animation: moveInTop .7s ease-out 0.5s;
+  animation: moveInTop .7s ease-out 0.5s;
+  -webkit-animation-fill-mode: backwards;
+  animation-fill-mode: backwards;
 }
 
 .header-content .tittle-header {
@@ -1180,6 +1184,34 @@ li {
   .footer-content .logo {
     padding-bottom: 51px;
     margin-left: 138px;
+  }
+}
+
+@-webkit-keyframes moveInTop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-3rem);
+    transform: translateY(-3rem);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(-3rem);
+    transform: translateY(-3rem);
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+    transform: translate(0);
   }
 }
 

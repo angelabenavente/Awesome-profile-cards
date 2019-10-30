@@ -1,3 +1,10 @@
+@keyframes moveInTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-3rem); }
+    100% {
+      opacity: 1;
+      transform: translate(0); } }
 @keyframes moveInBottom {
     0% {
        text-shadow: 0 0 black }
@@ -11,6 +18,8 @@
     top: -15px;
     justify-content: center;
     z-index: 2;
+    animation: moveInTop .7s ease-out 0.5s;
+    animation-fill-mode: backwards;
     @include tablet {
             display: flex;
             justify-content: flex-start;}
