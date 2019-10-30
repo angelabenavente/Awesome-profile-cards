@@ -463,8 +463,18 @@ li {
   color: #099d8d;
 }
 
+.persons .presentation .social .fab:hover {
+  -webkit-transform: scale(1.7);
+  transform: scale(1.7);
+}
+
 .persons .presentation .social .fas {
   color: #099d8d;
+}
+
+.persons .presentation .social .fas:hover {
+  -webkit-transform: scale(1.7);
+  transform: scale(1.7);
 }
 
 .persons .presentation .social .point {
@@ -654,7 +664,7 @@ li {
   display: block;
 }
 
-.footer-content .container-logo {
+.footer-content .container_logo {
   grid-column: 1/5;
 }
 

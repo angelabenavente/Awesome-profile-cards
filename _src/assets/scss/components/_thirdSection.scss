@@ -143,9 +143,17 @@
             .fab {
                 width: 16px;
                 height: 16px;
-                color: #099d8d;}
+                color: #099d8d;
+                &:hover {
+                    transform: scale(1.7);
+                }
+            }
             .fas {
-                color: #099d8d;}
+                color: #099d8d;
+                &:hover {
+                    transform: scale(1.7);
+                }
+            }
             .point {
                 font-family: 'Open Sans', sans-serif;
                 font-size: 16px;
