@@ -28,7 +28,8 @@
             width: 20%;
             padding-top: 30px;
             margin-left: 45px;
-            order: 1;}
+            order: 1;
+            text-align: left;}
         @include desktop {
             width: 20%;
             margin-left: 138px;
@@ -63,26 +64,21 @@
             line-height: 2.14;
             order: 2;
             text-align: end;}
-        a { 
-            display: block;
+        a {
             text-transform: uppercase;
             color: #54585a;
             opacity: 0.75;
-            grid-column: 1/6;                
-                &:hover {
+            grid-column: 1/5;
+            &:hover {
                     color:#14d9c4;
                     opacity: 0.75;}
-            
-            li {
-                display: block;}
         }
     }
-    .container-logo {
+    .container_logo {
         grid-column: 1/5;
     }
     .logo {
         width: 115.9px;
-        margin: auto;
         height: 45px;
         padding-bottom: 45px;
         @include tablet {

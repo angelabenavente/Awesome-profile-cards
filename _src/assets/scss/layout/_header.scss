@@ -1,9 +1,20 @@
+
+@keyframes moveInTop {
+    0% {
+      opacity: 0;
+      transform: translateY(-3rem); }
+    100% {
+      opacity: 1;
+      transform: translate(0); } }
+
 .header-content {
     width: 100%;
     position: fixed;
     top: -15px;
     justify-content: center;
     z-index: 2;
+    animation: moveInTop .7s ease-out 0.5s;
+    animation-fill-mode: backwards;
     @include tablet {
             display: flex;
             justify-content: flex-start;}
@@ -72,7 +83,8 @@
         a {
             height: 30px;
             padding-top: 8px;
-            padding-bottom: 7px;
+            padding-bottom: 0;
+            margin-left: 0;
             font-family: 'Rubik', sans-serif;
             font-size: 15px;
             font-weight: 500;
