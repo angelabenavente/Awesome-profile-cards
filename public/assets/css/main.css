@@ -729,8 +729,8 @@ li {
 }
 
 .header-content .first-navigation a:hover {
-  -webkit-animation-name: moveInBottom;
-  animation-name: moveInBottom;
+  -webkit-animation-name: text-shadow;
+  animation-name: text-shadow;
   -webkit-animation-delay: ease-out 0.6s;
   animation-delay: ease-out 0.6s;
   -webkit-animation-duration: 0.8s;
@@ -1331,23 +1331,23 @@ li {
   }
 }
 
-@-webkit-keyframes moveInBottom {
+@-webkit-keyframes text-shadow {
   0% {
-    text-shadow: 9px 9px 4.5px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 0 black;
   }
 
   100% {
-    text-shadow: 0 0 rgba(0, 0, 0, 0.075);
+    text-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
   }
 }
 
-@keyframes moveInBottom {
+@keyframes text-shadow {
   0% {
-    text-shadow: 9px 9px 4.5px rgba(0, 0, 0, 0.25);
+    text-shadow: 0 0 black;
   }
 
   100% {
-    text-shadow: 0 0 rgba(0, 0, 0, 0.075);
+    text-shadow: 20px 20px 10px rgba(0, 0, 0, 0.5);
   }
 }
 
