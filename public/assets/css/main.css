@@ -502,6 +502,7 @@ li {
   height: 45px;
   padding: 0;
   margin: auto;
+  margin-top: 30px;
 }
 
 .main__contact.text {
@@ -511,12 +512,21 @@ li {
 .main__contact.text.p {
   font-size: 16px;
   margin-top: 15px;
-  height: 122px;
+  height: 144px;
+}
+
+.main__contact.text.p.question {
+  text-transform: uppercase;
 }
 
 .main__contact.text.small {
+  padding-top: 10px;
   font-size: 12px;
   height: 22px;
+}
+
+.main__contact.text.small.star {
+  color: #14d9c4;
 }
 
 .contact-form {
@@ -925,6 +935,21 @@ li {
     margin-right: 26px;
   }
 
+  .main__contact.title {
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .main__contact.text.p {
+    max-width: 601px;
+    margin: auto;
+    margin-top: 15px;
+  }
+
+  .main__contact.text.small {
+    padding-top: 0px;
+  }
+
   .form .form.imput.submit {
     width: 206px;
   }
@@ -1126,6 +1151,10 @@ li {
   .persons .presentation .photo {
     width: 268px;
     height: 268px;
+  }
+
+  .main__contact.title {
+    margin-top: 45px;
   }
 
   .form .form.imput.submit {
