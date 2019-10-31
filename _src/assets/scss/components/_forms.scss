@@ -1,78 +1,144 @@
 
+.main__contact {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 500;
+        font-stretch: normal;
+        line-height: 1.88;
+        letter-spacing: normal;
+        color: #54585a;
+        &.title {
+            font-size: 24px;
+            font-family: 'Rubik', Arial, sans-serif;
+            color: #099d8d;
+            width: 127px;
+            height: 45px;
+            padding:0;
+            margin: auto;
+            margin-top: 30px;
+        }
+        &.text {
+            width: 90.6%;
+            margin: auto;
+            margin-top: 15px;
+            font-family: 'OpenSans', Arial, sans-serif;
+
+            &.p{
+                width: 100%;
+                max-width: 442px;
+                height: auto;
+                font-size: 16px;
+                margin-bottom: 38px;
+                margin-top: 0;
+                @include desktop {
+                    max-width: 601px;
+
+                }
+            }
+            &.small {
+                width: 100%;
+                margin: auto;
+                font-size: 12px;
+                height: 22px;
+                margin-bottom: 58px;
+
+                span {
+                    color: #14d9c4;
+                }
+            }
+        }
+    }
+
+
 .contact-form{
-    margin-left: 15px;
-    margin-right: 15px;
     margin-top: 58px;
     margin-bottom: 60px;
-    display: flex;
-    flex-direction: column;
-}
-
-        
-
-.form{
-    width: 100%;
     max-width: 601px;
     margin:0 auto;
-    font-family: 'OpenSans', Arial, sans-serif; 
-    font-size: 14px;
-    color: #54585a;
-    box-sizing: border-box;
-    .imput-simbol{
+    display: flex;
+    flex-direction: column;
+
+    .form{
+        width: 90.6%;
+        margin: auto;
+        font-family: 'OpenSans', Arial, sans-serif; 
         font-size: 14px;
-        color: #14d9c4;
-        padding: 3px;
-    }
-    
-    .form.imput{
-        max-width: 601px;
-        height: 45px;
-        border: 1px solid #b8b8b9;
-        color: #b8b8b9;
-        padding-left: 15px;
-        padding-top: 11px;
-        padding-bottom: 15px;
-        margin-top: 7px;
-        margin-bottom: 13px;
-        &.message{
-            height: 105px;
+        color: #54585a;
+        box-sizing: border-box;
+        @include tablet {
+            width: 100%;
         }
-        &.submit{
-            background-color: #099d8d;
-            color: #ffffff;
-            font-size: 16px;
-            border-radius: 4px;
-            border: 1px solid #099d8d;
-            @media all and (min-width:768px){
-                width: 206px; 
-            }
-            @media all and (min-width:1200px){
-                width: 278px;}
+        .imput-simbol{
+            font-size: 14px;
+            color: #14d9c4;
+            padding: 3px;
         }
-
-    }
-    
-
-
-}
-
-.par{
-    @media all and (min-width:1200px){
-        display: flex;
-        flex-direction: row;
-        .form.imput{
-            width: 395px;
-            margin-right: 44px;
         
-            &.tel{
-                width: 162px;
-                margin-right: 0;
-            
+        .form.imput{
+            width: 100%;
+            max-width: 601px;
+            height: 45px;
+            border: 1px solid #b8b8b9;
+            color: #b8b8b9;
+            padding-left: 15px;
+            padding-top: 11px;
+            padding-bottom: 15px;
+            margin-top: 7px;
+            margin-bottom: 13px;
+            &.message{
+                height: 105px;
             }
+            &.submit{
+                background-color: #099d8d;
+                color: #ffffff;
+                margin-top: 15px;
+                margin-bottom: 20px;
+                font-size: 16px;
+                border-radius: 4px;
+                border: 1px solid #099d8d;
+                @media all and (min-width:768px){
+                    width: 206px; 
+                }
+                @media all and (min-width:1200px){
+                    width: 278px;}
+            }
+
         }
+        
+
+
+    }
+
+    .par{
+        @media all and (min-width:1200px){
+            display: flex;
+            flex-direction: row;
+            .form.imput{
+                width: 395px;
+                margin-right: 44px;
             
-  
+                &.tel{
+                    width: 162px;
+                    margin-right: 0;
+                
+                }
+            }         
+        }
+    }
+    
+    /* subir botton*/
+
+    @media all and (min-width:768px){
+        .form__label.button{
+            margin-top: 15px;
+            display: flex;
+            justify-content: flex-end;
+
+            .form.imput.submit{
+                margin: 0;
+            }
+            
+        }
     }
 }
-    
-

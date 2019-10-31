@@ -1,5 +1,6 @@
 
 .footer-content {
+    height: 250px;
     width: 100%;
     background-color: white;
     border-top: 1px solid #b8b8b9;
@@ -8,6 +9,8 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 60px 90px 90px;
     @include tablet {
+        height: 170px;
+        border-bottom: none;
         width: 100%;
         position: relative;
         display: flex;
@@ -28,6 +31,7 @@
             width: 20%;
             padding-top: 30px;
             margin-left: 45px;
+            padding-bottom: 5px;
             order: 1;
             text-align: left;}
         @include desktop {
@@ -40,6 +44,7 @@
     .footer-navigation {
         padding-bottom: 30px;
         margin: auto;
+        margin-top: 10px;
         opacity: 0.75;
         font-family: 'Open Sans', sans-serif;
         font-size: 14px;
@@ -52,6 +57,7 @@
         grid-column: 1/5;
         @include tablet {
             width: 20%;
+            margin-top: 0;
             padding-top: 30px;
             margin-right: 45px;
             line-height: 2.14;
@@ -80,6 +86,7 @@
     .logo {
         width: 115.9px;
         height: 45px;
+        margin-top: 10px;
         padding-bottom: 45px;
         @include tablet {
             padding-bottom: 60px;

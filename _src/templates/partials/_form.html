@@ -1,21 +1,27 @@
-<div class="contact-form">
-    <form class="form" action="*" method="POST">
 
-        <label class="form label" for="name">Nombre completo<span class="form imput simbol">*</span></label>
-        <input class="form imput" id="name" placeholder="Nombre..." type="text" name="name" required>
 
-        <label class="form label" for="email">E-mail<span class="form imput-simbol">*</span></label>
-        <input class="form imput" id="email" placeholder="nombre.apellidos@mail.com" type="email" name="E-mail" required>
-
-        <label class="form label" for="phone">Teléfono</label>
-        <input class="form imput" id="phone" placeholder="Ej: 123456789" type="phone" name="Teléfono">
-
-        <input type="hidden" id="productid" name="productid" value="xm234jq"/>
-
-        <label class="form label" for="message">Mensaje<span class="form imput-simbol">*</span></label>
-        <textarea class="form imput message" id="message" placeholder="¿Qué necesitas?" rows="10" cols="5" name="Mensaje" required></textarea>
-
-        <input class="form imput submit" type="submit" value="ENVIAR">
-        
-    </form>
-</div>
+<form class="form" action="*" method="POST">
+    <div class="contact-form">
+        <div class="form__label">
+            <label class="form label" for="name">Nombre completo<span class="form imput-simbol">*</span></label>
+            <input class="form imput" id="name" placeholder="Nombre..." type="text" name="name" required>
+        </div>
+        <div class="par">
+            <div class="form__label">
+                <label class="form label" for="email">E-mail<span class="form imput-simbol">*</span></label>
+                <input class="form imput" id="email" placeholder="nombre.apellidos@mail.com" type="email" name="E-mail" required>
+            </div>
+            <div class="form__label">
+                <label class="form label" for="phone">Teléfono</label>
+                <input class="form imput tel" id="phone" placeholder="Ej: 123456789" type="tel" name="Teléfono">
+            </div>
+        </div>
+        <div class="form__label">
+            <label class="form label" for="message">Mensaje<span class="form imput-simbol">*</span></label>
+            <textarea class="form imput message" id="message" placeholder="¿Qué necesitas?" rows="10" cols="5" name="Mensaje" required></textarea>
+        </div>
+        <div class="form__label button">
+            <input class="form imput submit" type="submit" value="ENVIAR">
+        </div>
+    </div>
+</form>
