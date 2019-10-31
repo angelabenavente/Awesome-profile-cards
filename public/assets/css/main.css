@@ -525,6 +525,10 @@ li {
   height: 22px;
 }
 
+.main__contact.text.small.star {
+  color: #14d9c4;
+}
+
 .main__contact {
   width: 100%;
   text-align: center;
@@ -559,19 +563,20 @@ li {
   max-width: 442px;
   height: auto;
   font-size: 16px;
-  margin-bottom: 38px;
+  margin-bottom: 15px;
   margin-top: 0;
 }
 
-.main__contact.text.small {
+.main__contact.text .small {
   width: 100%;
   margin: auto;
   font-size: 12px;
   height: 22px;
-  margin-bottom: 58px;
+  margin-bottom: 30px;
+  margin-top: 15px;
 }
 
-.main__contact.text.small span {
+.main__contact.text .small span {
   color: #14d9c4;
 }
 
@@ -990,6 +995,21 @@ li {
     margin-right: 26px;
   }
 
+  .main__contact.title {
+    margin: auto;
+    margin-top: 30px;
+  }
+
+  .main__contact.text.p {
+    max-width: 601px;
+    margin: auto;
+    margin-top: 15px;
+  }
+
+  .main__contact.text.small {
+    padding-top: 0px;
+  }
+
   .contact-form .form {
     width: 100%;
   }
@@ -1214,6 +1234,10 @@ li {
   .persons .presentation .photo {
     width: 268px;
     height: 268px;
+  }
+
+  .main__contact.title {
+    margin-top: 45px;
   }
 
   .main__contact.text.p {
