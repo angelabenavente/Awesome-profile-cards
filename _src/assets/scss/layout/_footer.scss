@@ -87,15 +87,12 @@
         width: 115.9px;
         height: 45px;
         margin-top: 10px;
-        padding-bottom: 45px;
         @include tablet {
-            padding-bottom: 60px;
             margin-left: 45px;
             position: absolute;
             top: 65px;
             text-align: start;}
         @include desktop {
-            padding-bottom: 51px;
             margin-left: 138px;}
     }
  }

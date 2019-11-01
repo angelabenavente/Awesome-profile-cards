@@ -237,17 +237,21 @@ li {
   display: block;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 .hero {
   width: 100%;
   height: 421px;
-  background: url(../images/hero-image-mobile.jpg) center bottom no-repeat;
+  background: url(../images/hero-mobile.jpg) center bottom no-repeat;
   background-size: cover;
   z-index: -2;
 }
 
 .claim {
   width: 90.6%;
-  max-width: 441px;
   margin-left: auto;
   margin-right: auto;
   display: -webkit-box;
@@ -265,8 +269,8 @@ li {
   width: 260px;
   padding-left: 15px;
   padding-right: 15px;
-  padding-top: 14px;
-  padding-bottom: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
   margin: 0;
   position: relative;
   top: -40px;
@@ -338,6 +342,14 @@ li {
   margin-right: 15px;
 }
 
+.second-section .second.strengths-block {
+  padding-top: 30px;
+}
+
+.second-section .second.weaknesses-block {
+  padding-top: 30px;
+}
+
 .second-section .second p {
   margin-top: 0;
   font-family: 'Open Sans', sans-serif;
@@ -354,7 +366,6 @@ li {
 
 .second-section .second .strengths {
   height: 45px;
-  padding-top: 30px;
   margin-top: 0;
   margin-bottom: 0;
   opacity: 100%;
@@ -369,7 +380,6 @@ li {
 
 .second-section .second .weaknesses {
   height: 45px;
-  padding-top: 30px;
   margin-top: 0;
   margin-bottom: 0;
   opacity: 100%;
@@ -671,10 +681,12 @@ li {
   animation: moveInTop .7s ease-out 0.5s;
   -webkit-animation-fill-mode: backwards;
   animation-fill-mode: backwards;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 .header-content .tittle-header {
-  height: 30px;
+  height: 60px;
   padding-top: 15px;
   padding-bottom: 15px;
   margin-left: auto;
@@ -811,7 +823,6 @@ li {
   width: 115.9px;
   height: 45px;
   margin-top: 10px;
-  padding-bottom: 45px;
 }
 
 .wrapper {
@@ -907,13 +918,13 @@ li {
   .second-section .second .strengths {
     padding-top: 0;
     padding-bottom: 15px;
-    margin-top: 45px;
+    margin-top: 15px;
   }
 
   .second-section .second .weaknesses {
     padding-top: 0;
     padding-bottom: 15px;
-    margin-top: 45px;
+    margin-top: 15px;
   }
 
   .persons {
@@ -936,6 +947,10 @@ li {
     display: flex;
     -ms-flex-item-align: baseline;
     align-self: baseline;
+  }
+
+  .persons .presentation:last-child {
+    margin-bottom: 0;
   }
 
   .persons .presentation.left {
@@ -1064,7 +1079,7 @@ li {
 
   .header-content .first-navigation {
     width: 50vw;
-    height: 30px;
+    height: 60px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-right: 45px;
@@ -1125,7 +1140,6 @@ li {
   }
 
   .footer-content .logo {
-    padding-bottom: 60px;
     margin-left: 45px;
     position: absolute;
     top: 65px;
@@ -1143,12 +1157,13 @@ li {
   }
 
   .claim {
+    height: 90px;
     width: 574px;
     margin-left: 142px;
+    top: -90px;
   }
 
   .claim .hero-title {
-    height: 60px;
     font-size: 24px;
     line-height: 1.25;
   }
@@ -1219,25 +1234,17 @@ li {
   }
 
   .persons {
-    width: 79%;
+    width: 77%;
     margin-left: auto;
     margin-right: auto;
   }
 
-  .persons .presentation.left {
-    padding-right: 138px;
-  }
-
   .persons .presentation.left .description {
-    margin-right: 162px;
-  }
-
-  .persons .presentation.right {
-    padding-right: 138px;
+    padding-right: 155px;
   }
 
   .persons .presentation.right .description {
-    margin-left: 162px;
+    padding-left: 155px;
   }
 
   .persons .presentation .photo {
@@ -1307,7 +1314,6 @@ li {
   }
 
   .footer-content .logo {
-    padding-bottom: 51px;
     margin-left: 138px;
   }
 }

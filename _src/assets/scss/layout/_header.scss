@@ -21,11 +21,13 @@
     z-index: 2;
     animation: moveInTop .7s ease-out 0.5s;
     animation-fill-mode: backwards;
+    box-sizing: border-box;
+    
     @include tablet {
             display: flex;
             justify-content: flex-start;}
     .tittle-header {
-        height: 30px;
+        height: 60px;
         padding-top: 15px;
         padding-bottom: 15px;
         margin-left: auto;
@@ -67,7 +69,7 @@
         justify-content: space-evenly;
         @include tablet {
             width: 50vw;
-            height: 30px;
+            height: 60px;
             padding-top: 15px;
             padding-bottom: 15px;
             padding-right:45px;
