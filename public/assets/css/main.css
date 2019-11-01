@@ -245,7 +245,11 @@ li {
 .hero {
   width: 100%;
   height: 421px;
+<<<<<<< HEAD
   background: url(../images/hero-mobile.jpg) center bottom no-repeat;
+=======
+  background: url(../images/team-1280.jpg) center bottom no-repeat;
+>>>>>>> fe2b993214a9543dbbde8766a41664c5fd07b1fa
   background-size: cover;
   z-index: -2;
 }
@@ -863,7 +867,7 @@ li {
 @media all and (min-width: 768px) {
   .hero {
     height: 421px;
-    background: url(../images/hero-image-tablet-web.jpg) center bottom no-repeat;
+    background: url(../images/team-1280.jpg) center bottom no-repeat;
     background-size: cover;
   }
 
