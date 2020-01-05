@@ -1,4 +1,3 @@
-![Adalab](_src/assets/images/image-hero3.png)
 # Contact us!
 Interfaz diseñada para facilitar el contacto de los grupos de trabajo de las adalabers.
 Esta se compone de dos pages. La primera tiene:
